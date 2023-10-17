@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# SPDX-FileCopyrightText: 2023 Yuuki Tsubouchi 
+
 import sys
 
 ans=0
