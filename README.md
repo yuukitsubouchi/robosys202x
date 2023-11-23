@@ -14,15 +14,18 @@
 
 ## インストール方法  
 * 必要なソフトウェアで、このリポジトリのURLからインストールする。
-``` git clone https://github.com/yuukitsubouchi/robosys202x.git
+```bash
+git clone https://github.com/yuukitsubouchi/robosys202x.git
 ```
  
 ## 実行方法
 * インストールしたプログラムのあるファイルに移動して
-``` cd robosys202x
+```bash
+cd robosys202x
 ```
 以下のように実行する
-``` seq 数字 | ./plus
+```bash 
+seq 数字 | ./plus
 ```
 
 ## 必要なソフトウェア
