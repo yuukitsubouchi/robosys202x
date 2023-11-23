@@ -1,5 +1,5 @@
-# 入力した数字まで足したり,引いたり、かけたり、二乗したものを足したり,引いたり,平方根にして足したり、三角関数のsin,cos,tanにして足したりするプログラム
-
+# 入力した数字までいろんなものを足したり引いたりする計算のプログラム
+* 入力した数字まで足したり,引いたり、かけたり、二乗したものを足したり,引いたり,平方根にして足したり、三角関数のsin,cos,tanにして足したりするプログラム
 
 # plusコマンド
 [![test](https://github.com/yuukitsubouchi/robosys202x/actions/workflows/test.yml/badge.svg)](https://github.com/yuukitsubouchi/robosys202x/actions/workflows/test.yml)
@@ -39,5 +39,6 @@ seq 数字 | ./plus
 
 ## ライセンス
 * このソフトウェアパッケージは、３条項BSDライセンスの下、再頒布および使用が許可されます。
-* このパッケージのコードは、下記のスライド（CC-BY-SA 4.0 by Ryuici Ueda)のものを本人の許可を得て自身の著作としたものです。
+* このパッケージのコードは、下記のスライド（CC-BY-SA 4.0 by Ryuici Ueda)のものの一部を本人の許可を得て自身の著作としたものです。
+   * [ryuichiueda/my_slides robosys_2022](https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022)
 * © 2023 Yuuki Tsubouchi
