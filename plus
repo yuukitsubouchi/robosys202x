@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 import sys
-
+import math
 
 
 ans=0
@@ -11,7 +11,10 @@ ans1=0
 ans2=1
 ans3=0
 ans4=0
-
+ans5=0
+sin_value=0 
+cos_value=0 
+tan_value=0
 
 for line in sys.stdin:
     try:
@@ -20,14 +23,21 @@ for line in sys.stdin:
         ans2 *= int(line)
         ans3 += int(line)*int(line)
         ans4 -= int(line)*int(line)
+        sin_value += math.sin(math.radians(int(line)))
+        cos_value += math.cos(math.radians(int(line)))
+        tan_value += math.tan(math.radians(int(line)))
+        ans5 += math.sqrt(int(line))
     except:
         ans +=float(line)
         ans1 -=float(line)
         ans2 *=float(line)
         ans3 +=float(line)*float(line)
         ans4 -=float(line)*float(line)
-
-print(f"{ans},{ans1},{ans2},{ans3},{ans4}")
+        sin_value = math.sin(math.radians(float(line)))
+        cos_value = math.cos(math.radians(float(line)))
+        tan_value = math.tan(math.radians(float(line)))
+        ans5 += math.sqrt(float(line))
+print(f"{ans},{ans1},{ans2},{ans3},{ans4},{sin_value},{cos_value},{tan_value},{ans5}")
 #print(ans,ans1,ans2,ans3,ans4)
 #print(ans1)
 #print(ans2)
