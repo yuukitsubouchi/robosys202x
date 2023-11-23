@@ -2,10 +2,9 @@
 # SPDX-FileCopyrightText: 2023 Yuuki Tsubouchi
 # SPDX-License-Indentifier: BSD-3-Clause
 
-
 ng () {
-	echo NG at Line $1
-	res=1
+      echo NG at Line $1
+      res=1
 }
 
 res=0
@@ -13,17 +12,21 @@ res=0
 #found=0
 
 out=$(seq 5 | ./plus)
-readarray -t out_array <<< "$out"
-for result in "${out_array[@]}"; do
-	[ "$result" = 15 ] || [ "$result" = -15 ] || [ "$result" = 120 ] || [ "$result" = 55 ] || [ "$result" = 55 ] || [ "$result" = -55 ] || ng ${LINENO}
+[ "${out}" = "15,-15,120,55,-55" ] || ng $LINENO
 
-    #if [ "$result" != 1 ]; then
+#readarray -t out_array <<< "$out"
+#for result in "${out_array[@]}"; do
+	#[ "${out_array[0]}" = 15 ] || [ "${out_array[1]}" = -15 ] || [ "${out_array[2]}" = 120 ] || [ "${out_array[3]}" = 55 ] || [ "${out_array[4]}" = 55 ] || [ "${out_array[5]}" = -55 ] || ng ${LINENO}
+
+ #   if [ "$result" != 15 ]; then
 #	    found=1
+#	ng ${LINENO}
+#	  break
  #   fi 
          #ng ${LINENO}
         
-    
-done
+   
+#done
 #if [ "$found" -eq 1 ]; then
  #   ng ${LINENO}
 #else
@@ -56,16 +59,22 @@ done
      #echo ${LINENO}
 #fi
 
-#out=$(seq 10 | ./plus)
-#[ "${out}" = "55,-55,3628800,385,-385" ] || ng ${LINENO}
+out=$(seq 10 | ./plus)
+[ "${out}" = "55,-55,3628800,385,-385" ] || ng ${LINENO}
 #if [ "${out}" != "55,-55,3628800,385" ]; then
 #    ng ${LINENO}
 #fi
 #[ "${out}" = 55,-55,3628800,385,-385 ] || ng ${LINENO}
 #if [ "${out}" = 55 ] && [ "${out}" = -55 ] && [ "${out}" = 3628800 ] && [ "${out}" = 385 ]; then
 #        ng ${LINENO}
-#fi	    
+#fi
+out=$(seq 15 | ./plus)
+[ "${out}" = "120,-120,1307674368000,1240,-1240" ] || ng ${LINENO}
+
+
+
 
 [ "$res" = 0 ] && echo OK
+
 exit $res
 
