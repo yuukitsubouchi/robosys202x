@@ -41,4 +41,5 @@ seq 数字 | ./plus
 * このソフトウェアパッケージは、３条項BSDライセンスの下、再頒布および使用が許可されます。
 * このパッケージのコードは、下記のスライド（CC-BY-SA 4.0 by Ryuici Ueda)のものの一部を本人の許可を得て自身の著作としたものです。
    * [ryuichiueda/my_slides robosys_2022](https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022)
+   * https://ryuichiueda.github.io/my_slides/robosys_2022/lesson4.html#/20
 * © 2023 Yuuki Tsubouchi
